@@ -50,7 +50,18 @@ def main() -> None:
         add("subset_sum", "backtracking", n, es, [1.0] * TRIALS)
         add("subset_sum", "greedy", n, gs, gr)
         print("subset sum done n =", n)
-
+    for n in SUBSET_SIZES:
+        ws = []
+        for _ in range(TRIALS):
+            nums = [2 * rng.randint(1, 500) for _ in range(n)]
+            target = sum(nums) // 2 + 1
+            if target % 2 == 0:
+                target += 1
+            t, ans = time_call(subset_sum_backtracking, nums, target, repeats=1)
+            assert ans is None
+            ws.append(t)
+        add("subset_sum_worst", "backtracking", n, ws, [1.0] * TRIALS)
+        print("subset sum worst case done n =", n)
     for n in SAT_VARS:
         es, ws, wr = [], [], []
         for _ in range(TRIALS):
