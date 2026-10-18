@@ -43,4 +43,4 @@ examples/         week8_demo.py
 
 ## AI assistance
 
-AI assistance disclosure: TODO Omar, write one line here in your own words saying what help you used and what you wrote and checked yourself.
+I used an AI tutor to explain the concepts and check my codes. I ran every test, benchmark, and checked the results.
