@@ -2,7 +2,7 @@
 
 Omar Vasquez
 
-This project looks at problems that are easy (P) and problems we think are hard (NP complete). It has a 3-SAT to Vertex Cover reduction demo, a backtracking Subset Sum solver, a small DFS SAT solver, a 2-approximation for Vertex Cover, and a Nearest Neighbor heuristic for TSP. A benchmark script times them on growing inputs and saves charts and a CSV to `benchmarks/results/`. The write up is in `analysis/week8_report.md`.
+This project looks at problems that can be solved quickly (P) and problems we think are hard (NP complete). It has a 3-SAT to Vertex Cover reduction demo, a backtracking Subset Sum solver, a small DFS SAT solver, a 2-approximation for Vertex Cover, and a Nearest Neighbor heuristic for TSP. A benchmark script times them on growing inputs and saves charts and a CSV to `benchmarks/results/`. The write up is in `analysis/week8_report.md`.
 
 ## Install
 
